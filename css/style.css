@@ -1,0 +1,154 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+:focus,
+:active,
+:visited,
+input {
+        outline: none;
+}
+
+ul,
+li {
+        list-style: none;
+        
+}
+
+a {
+        text-decoration: none;
+}
+
+body {
+        background-image: url("https://tarkikromanski.github.io/files/bg1.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Gill Sans', sans-serif;
+}
+
+h1 {
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin:50px 0px;
+}
+
+.slider__items {
+        max-width: 1100px;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0 50px;
+        position: relative;
+        overflow-y: hidden;
+}
+
+.slider__item {
+        transition: box-shadow 2s;
+        cursor: pointer;
+        position: relative;
+        background-color: #344c65;
+        margin: 0px 10px;
+        padding: 30px;
+        box-shadow: inset -141px -129px 200px rgba(0, 0, 0, 0.25);
+}
+
+.slider__item:hover {
+        box-shadow: inset 141px 129px 200px rgba(0, 0, 0, 0.25);
+}
+
+.item__name {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 16px;
+        color: #3eaef2;
+        margin-bottom: 7px;
+}
+
+.item__status {
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #fff;
+        margin-bottom: 80px;
+}
+
+.item__email {
+        position: absolute;
+        top: 34px;
+        right: 30px;
+        background-image: url('https://tarkikromanski.github.io/files/mail-ico.png');
+        width: 25px;
+        height: 20px;
+}
+
+.item__photo {
+        max-width: 150px;
+        max-height: 150px;
+        margin-bottom: 54px;
+}
+
+.item__contact {
+        font-size: 12px;
+        color: #fff;
+        margin: 2px;
+}
+
+.item__contact span {
+        color: #3eaef2;
+        font-weight: 700;
+        margin-right: 5px;
+}
+
+.slick-arrow {
+        position: absolute;
+        top: 27%;
+        width: 14px;
+        height: 26px;
+        font-size: 0;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        background-image: url("https://tarkikromanski.github.io/files/arrow-slider.png");
+        background-repeat: no-repeat;
+        z-index: 3;
+}
+
+.slick-arrow.slick-disabled {
+        cursor: default;
+}
+
+.slick-prev {
+        left: 30px;
+        transform: rotate(180deg);
+}
+
+.slick-next {
+        right: 30px;
+}
+
+.slick-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 210px;
+        left: 0;
+        right: 0;
+}
+
+.slick-dots li button {
+        font-size: 0;
+        border: none;
+        background-color: #fff;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin: 0px 10px;
+}
+
+.slick-dots li.slick-active button {
+        background-color: yellow;
+}
